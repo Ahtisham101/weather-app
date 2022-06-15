@@ -1,12 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { MainPage } from '../components/MainPage'
-import styles from '../styles/Home.module.css'
+import { MainContent } from '../components/MainContent'
+import { SideBar } from '../components/SideBar'
 
 const Home: NextPage = () => {
   return (
-   <MainPage/>
+    <div className="bg-[#100E1D] flex flex-col lg:flex-row">
+    <SideBar />
+    <MainContent />
+  </div>
   )
 }
 
